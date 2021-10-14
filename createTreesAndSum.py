@@ -33,7 +33,7 @@ def createBinaryTree(node_list):
         if value > current:
             rightChildIndex = idx
             break
-    
+
     leftChildTree = createBinaryTree(node_list[1:rightChildIndex])
     rightChildTree = createBinaryTree(node_list[rightChildIndex:])
     return BinaryTree(current, leftChildTree, rightChildTree)
