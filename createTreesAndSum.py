@@ -22,7 +22,7 @@ def createNodeList(node_list):
     return node_list
     
 
-def createBinaryTree(node_list):
+def createBinaryTree(self,node_list):
     if len(node_list) ==0:
         return None
 
@@ -34,9 +34,11 @@ def createBinaryTree(node_list):
             rightChildIndex = idx
             break
 
-    leftChildTree = createBinaryTree(node_list[1:rightChildIndex])
-    rightChildTree = createBinaryTree(node_list[rightChildIndex:])
+    leftChildTree = self.createBinaryTree(node_list[1:rightChildIndex])
+    rightChildTree = self.createBinaryTree(node_list[rightChildIndex:])
     return BinaryTree(current, leftChildTree, rightChildTree)
+
+#def create(node_list):
 
 def sum(self,root,total_sum,sum_list):
     if root is None:

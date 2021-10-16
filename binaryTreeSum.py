@@ -44,14 +44,14 @@ class BinaryTree(object):
             sum_list.append(total_sum)
 
 
-#1          5
+#1          10
 #         /    \
-#2       4      3
+#2       2      7 
 #      /  \    /  \
-#3    11   10   5    8
-tree = BinaryTree(1)
+#3    4    6  5    8
+tree = BinaryTree(10)
 tree.root.left = Node(2)
-tree.root.right = Node(3)
+tree.root.right = Node(7)
 tree.root.left.left = Node(4)
 tree.root.left.right = Node(6)
 tree.root.right.left = Node(5)
